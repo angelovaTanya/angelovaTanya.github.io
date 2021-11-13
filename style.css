@@ -80,7 +80,7 @@ header {
 .banner-par{
     animation-name: anim;
     animation-duration: 4s;
-    animation-delay: .6s;
+    animation-delay: .10s;
     animation-fill-mode: backwards;
 }
 
@@ -225,6 +225,21 @@ header {
 
 /* skills */
 
+.slide-in{
+  transform: translateX(70%);
+  opacity: 0;
+}
+
+.slide-in{
+  transition:
+              opacity 250ms ease-in,
+              transform 600ms ease-in;
+}
+
+ .appear{
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .skill-bars{
   padding: 25px 30px;
@@ -260,8 +275,8 @@ header {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
-  animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100%{
     opacity: 1;
@@ -277,8 +292,16 @@ header {
   border-radius: 10px;
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
               0 1px rgba(255,255,255,0.8);
+}
+
+.skill-bars .bar .appear{
   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
+
+.skill-bars .bar .info .appear{
+  animation: showText 0.5s 1s linear forwards;
+}
+
 @keyframes animate {
   100%{
     transform: scaleX(1);
@@ -390,7 +413,7 @@ header {
     border:1px dashed #70aed2;
     position: absolute;
     top:0;
-    left:40px
+    left:50px
 }
 
 .box ul li{
@@ -413,7 +436,7 @@ header {
     border:1px solid #70aed2;
     position: absolute;
     top:0;
-    left:-20px
+    left:-10px
 }
 
 .box ul li > span:before,.box ul li > span:after{
@@ -425,7 +448,7 @@ header {
     background:#70aed2;
     border:2px solid #fff;
     position: absolute;
-    left:-5.5px
+    left:-5px
 }
 
 .box ul li > span:before{top:-10px}
@@ -460,7 +483,7 @@ header {
 
 .box .time span{
     position: absolute;
-    left: -115px;
+    left: -120px;
     color:#70aed2;
     font-size:80%;
     font-weight: bold;
