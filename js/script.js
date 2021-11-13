@@ -1,3 +1,4 @@
+// active menu on click in the navigation bar
 $("#navAbout").click(function() {
         $(".navigation ul li").children().removeClass("nav-active");
         $(this).addClass("nav-active");
@@ -47,9 +48,9 @@ $("#navAbout").click(function() {
 // animation on scroll
 const progressBarsAppear = document.querySelectorAll('.skill-bars .bar .progress-line ');
 const infosTextAppear = document.querySelectorAll('.skill-bars .bar .info span');
-const sliders = document.querySelectorAll('.slide-in');
+const sliders = document.querySelectorAll('.slide-in, .slide-in-left');
 
-const apprearOptions = {
+const appearOptions = {
   threshold: 0,
   rootMargin: "0px 0px -250px 0px"
 }
@@ -68,7 +69,7 @@ const appearOnScroll = new IntersectionObserver
     }
   });
 
-},apprearOptions);
+},appearOptions);
 
 progressBarsAppear.forEach(progressBar => {
   appearOnScroll.observe(progressBar);
@@ -81,3 +82,24 @@ infosTextAppear.forEach(info => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+
+// activeMenu
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.nav-link').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top - 111 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.nav-link').removeClass("nav-active"); //added to remove active class from all a elements
+            currLink.addClass("nav-active");
+        }
+        else{
+            currLink.removeClass("nav-active");
+        }
+    });
+}
+
+//activeMenu();
+window.addEventListener('scroll', onScroll);

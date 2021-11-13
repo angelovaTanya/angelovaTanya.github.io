@@ -230,7 +230,18 @@ header {
   opacity: 0;
 }
 
+.slide-in-left{
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
 .slide-in{
+  transition:
+              opacity 250ms ease-in,
+              transform 600ms ease-in;
+}
+
+.slide-in-left{
   transition:
               opacity 250ms ease-in,
               transform 600ms ease-in;
