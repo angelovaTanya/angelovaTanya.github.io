@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+<!--  <link href="css/main.css?ver=1.1.0" rel="stylesheet"> -->
+
     <link rel="stylesheet-social" href="bootstrap-social.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6139/6139897.png">
 
@@ -59,7 +62,7 @@
                 <div class="collapse navbar-collapse justify-content-end fw-bold text-uppercase navigation" id="myNavbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="#about" id="navAbout" class="nav-link active m-2 menu-item nav-active">About</a>
+                            <a href="#about" id="navAbout" class="nav-link m-2 menu-item nav-active">About</a>
                         </li>
                         <li class="nav-item">
                             <a href="#skills" id="navSkills" class="nav-link m-2 menu-item">Skills</a>
@@ -98,7 +101,7 @@
                       </h1>
                       <p class="lead banner-heading display-7 fst-italic text-uppercase">Software Systems Engineering M.Sc @ INSA Rouen </p>
                       <p class="lead banner-heading">Looking for a new challenge</p>
-                      <a href="#" class="btn btn-outline-light bnt-lg px-4 m-3 banner-heading">Hire me</a>
+                      <a href="#contact" class="btn btn-outline-light bnt-lg px-4 m-3 banner-heading">Hire me</a>
                       <a href="#" class="btn btn-outline-light bnt-lg px-4 m-3 banner-heading">Download CV</a>
                     </div>
                 </div>
@@ -386,12 +389,12 @@
                         <ul id="first-list">
                             <li>
                               <span></span>
-                              <div class="card slide-in ">
+                              <a class="card slide-in" href="https://cms.cern/detector/identifying-tracks" title="Learn more about the CMS Tracker">
                                 <div class="title">Technical student @ <span class="company">CERN</span> </div>
                                 <div class="info">Building from scratch a CAEN power supply simulator for the CMS Tracker Detector Control Systems (DCS) team. </div>
                                 <div class="location"> Geneva, Switzerland </div>
                                 <div class="techStack"> Tech : WinCC OA 3.16, Ctrl++ scripting language, Git, UML </div>
-                              </div>
+                              </a>
                               <div class="time">
                                   <span class="slide-in-left">July 2021</span>
                                   <span class="slide-in-left">March 2020 </span>
@@ -399,12 +402,12 @@
                             </li>
                             <li>
                                 <span></span>
-                                  <div class="card slide-in">
+                                  <a class="card slide-in" href="https://happyquest.co/" title="Learn more about Happy Quest">
                                     <div class="title">Frontend developer & Scrum master Semester 2/2 @ Happy Quest</div>
                                     <div class="info"> Developing the user interface of the HappyQuest app, v.3. Organisation of the team work, following the Agile principles. </div>
                                     <div class="location"> Rouen, France </div>
-                                    <div class="techStack"> Tech : Angular, PHP, Git, UML, ActiveCollab</div>
-                                  </div>
+                                    <div class="techStack"> Tech : Angular, Git, UML, ActiveCollab</div>
+                                  </a>
                                   <div class="time">
                                       <span class="slide-in-left">January 2020</span>
                                       <span class="slide-in-left" >September 2019</span>
@@ -412,12 +415,12 @@
                             </li>
                             <li>
                                 <span></span>
-                                <div class="card slide-in">
+                                <a class="card slide-in" href="https://cleverm8.com/en/" title="Learn more about CleverM8">
                                   <div class="title">Backend Java developer @ CleverM8 </div>
                                   <div class="info">REST API development for validation of the cognitive model configuration, created by the user of the CleverM8 platform. Participation in the design of the CleverM8 platform through conducted Design thinking sprint.</div>
                                   <div class="location"> Paris, France </div>
                                   <div class="techStack"> Tech : Java Spring, Hibernate, Intellij IDEA, Git, UML, Maven</div>
-                                </div>
+                                </a>
                                 <div class="time">
                                     <span class="slide-in-left">August 2019</span>
                                     <span class="slide-in-left" >May 2019</span>
@@ -426,12 +429,12 @@
 
                             <li>
                                 <span></span>
-                                  <div class="card slide-in">
+                                  <a class="card slide-in" href="https://happyquest.co/" title="Learn more about Happy Quest">
                                     <div class="title">Frontend developer & Scrum master Semester 1/2 @ Happy Quest</div>
                                     <div class="info"> Developing the user interface of the HappyQuest app, v.3. Organisation of the team work, following the Agile principles. </div>
                                     <div class="location"> Rouen, France </div>
-                                    <div class="techStack"> Tech : Angular, PHP, Git, UML, ActiveCollab</div>
-                                  </div>
+                                    <div class="techStack"> Tech : Angular, Git, UML, ActiveCollab</div>
+                                  </a>
                                   <div class="time">
                                       <span class="slide-in-left">May 2019</span>
                                       <span class="slide-in-left">January 2019</span>
@@ -440,12 +443,12 @@
 
                             <li>
                                 <span></span>
-                                <div class="card slide-in">
+                                <a class="card slide-in" href="https://alice-collaboration.web.cern.ch/" title="Learn more about the Alice experiment">
                                 <div class="title">Summer student @ CERN </div>
-                                <div class="info">Development of a search engine for the data structures avail- able in the connected systems of the ALICE experiment.</div>
+                                <div class="info">Development of a search engine for the data structures available in the connected systems of the ALICE experiment.</div>
                                 <div class="location"> Geneva, Switzerland </div>
                                 <div class="techStack"> Tech : WinCC OA 3.15, Ctrl scripting language</div>
-                              </div>
+                              </a>
                                 <div class="time">
                                     <span class="slide-in-left">August 2018</span>
                                     <span class="slide-in-left">June 2018</span>
@@ -507,28 +510,86 @@
     </section>
 
 
-    <section class="p-5 experience" id='education'>
+    <section class="p-5 education" id='education'>
       <div class="container-fluid">
           <div class="row">
-              <div class="col-md-12 text-center experienceCard column">
+            <div class="experienceCard">
+              <div class="container cc-education">
                 <h2 class="text-dark fst-italic text-center columnTitle"> Education </h2>
                 <div class="underline mb-4 bg-secondary"></div>
-                <div class="row">
-                  <div class="col-md-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-3 card-header slide-in-left">
+                      <!-- data-aos="fade-right" data-aos-offset="50" data-aos-duration="500" -->
+                      <div class="cc-education-header">
+                        <p>2017 - 2020</p>
+                        <div class="h5">Master's Degree in Engineering</div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 slide-in">
+                      <div class="card-body">
+                        <div class="h5">Master in Computer science and Technology of Information</div>
+                        <p class="category">INSA Rouen Normandie</p>
+                        <p> Rouen, France</p>
+                        <p> Signal Processing, Machine Learning, Python, Optimization, Databases, Theory of Information, Accounting,
+                          Algorithmic, Advanced Programming (C, Java), Numerical Analysis, Statistics, Signal Processing, UML, Operating Systems,
+                          Automated Systems, Sensors, Compiling, Electronics, Web Application Development, Law, Quality</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-3 card-header slide-in-left">
+                      <div class="cc-education-header">
+                        <p>2014 - 2017</p>
+                        <div class="h5">Common engineering course</div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 slide-in">
+                      <div class="card-body">
+                        <div class="h5">Common engineering course</div>
+                        <p class="category">INSA Rouen Normandie </p>
+                        <p> Rouen, France</p>
+                        <p>Bilingual Section (50% of the courses in English)</p>
+                        <p>Programming (Pascal), Statistics (Matlab), Algebra, Probabilities,
+                          Chemistry, Thermodynamics, Basics of Electricity, Optics</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-3 card-header slide-in-left">
+                      <div class="cc-education-header">
+                        <p>2009 - 2014</p>
+                        <div class="h5">High School</div>
+                      </div>
+                    </div>
+                    <div class="col-md-9 slide-in">
+                      <div class="card-body">
+                        <div class="h5">Bilingual french high school </div>
+                        <p class="category"> IV Foreign Language High School "Frédéric Joliot-Curie"</p>
+                        <p>Varna, Bulgaria</p>
+                        <p>French language, French literature, Spanish language, Mathematics, Bulgarian language and literature, Physics, Biology in french, Geography in french, French history</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-             </div>
+            </div>
           </div>
       </div>
     </section>
 
-    <section class="p-5 experience" id='contact'>
+    <section class="p-5 contact" id='contact'>
       <div class="container-fluid">
           <div class="row">
               <div class="col-md-12 text-center experienceCard column">
-                <h2 class="text-dark fst-italic text-center columnTitle"> Contact ME </h2>
+              <h2 class="text-dark text-center columnTitle"> Contact me </h2>
                 <div class="underline mb-4 bg-secondary"></div>
-                    <form action="https://formsubmit.co/tan.angelova1995@gmail.com" method="post" id="contact-form">
+                 <form action="https://formsubmit.co/tan.angelova1995@gmail.com" method="post" id="contact-form">
+                      <input type="hidden" name="_captcha" value="false">
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="form-group">
@@ -553,7 +614,7 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label for="message" class="sr-only">Message</label>
-                        <textarea class="form-control input-lg" rows="8" id="message" name="message" placeholder="Message"></textarea>
+                        <textarea class="form-control input-lg" rows="8" id="message" name="message" placeholder="Send me a massage, I would be happy to work with you!"></textarea>
                       </div>
                     </div>
                   </div>
@@ -565,8 +626,31 @@
                     </div>
                   </div>
                 </form>
-             </div>
+              <!--    <div class="card centered">
+                    <article class="letter">
+                      <div class="side">
+                        <p class="inputText">
+                          <textarea placeholder="Your message"></textarea>
+                        </p>
+                      </div>
+                      <div class="side">
+                        <p class="inputText">
+                          <input type="text" placeholder="Your name" >
+                        </p>
+                        <p class="inputText">
+                          <input type="email" placeholder="Your email" >
+                        </p>
+                        <p class="inputText">
+                          <button id="sendLetter">Send</button>
+                        </p>
+                      </div>
+                    </article>
+                    <div class="envelope front"></div>
+                    <div class="envelope back"></div>
+                  </div>
+                  <p class="result-message centered inputText">Thank you for your message</p> -->
           </div>
+        </div>
       </div>
     </section>
     <!-- Optional JavaScript; choose one of the two! -->
