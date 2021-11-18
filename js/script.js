@@ -39,6 +39,7 @@ $("#navAbout").click(function() {
         return false;
        });
 
+
        $("#navContact").click(function() {
          $(".navigation ul li").children().removeClass("nav-active");
          $(".navigation ul li").children().removeClass("activeOnScroll");
@@ -96,6 +97,7 @@ function onScroll(event){
     $('.nav-link').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
+        var refElementId;
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('.nav-link').removeClass("activeOnScroll"); //added to remove active class from all a elements
             $('.nav-link').removeClass("nav-active"); //added to remove active class from all a elements

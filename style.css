@@ -761,11 +761,14 @@ svg{
   margin-bottom: 0; }
 
 .cc-education .cc-education-header {
-  padding-top: 60px;
-  padding-right: 0;
+  vertical-align: middle;
   text-align: center;
   color: #fff;
   border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .cc-education .card{
@@ -777,6 +780,7 @@ svg{
   border-radius: 10px;
   background-color: #70aed2;
   box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+  height: 25vh;
 }
 
 .card-body{
@@ -846,3 +850,9 @@ input[type=text]:focus,
 input[type=email]:focus
 
 /* end of contact */
+
+
+
+footer {
+
+}
