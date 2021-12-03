@@ -1,15 +1,17 @@
 // active menu on click in the navigation bar
-$("#navAbout").click(function() {
+        $("#navAbout").click(function() {
         $(".navigation ul li").children().removeClass("nav-active");
         $(".navigation ul li").children().removeClass("activeOnScroll");
         $(this).addClass("nav-active");
-           $('html, body').animate({
+        $('html, body').animate({
                scrollTop:        $("#about").offset().top
            }, 500);
         return false;
+        $(this).removeClass("nav-active");
+        $(this).addClass("nav-unactive");
        });
 
-      $("#navSkills").click(function() {
+        $("#navSkills").click(function() {
         $(".navigation ul li").children().removeClass("nav-active");
         $(".navigation ul li").children().removeClass("activeOnScroll");
         $(this).addClass("nav-active");
@@ -19,17 +21,17 @@ $("#navAbout").click(function() {
         return false;
        });
 
-      $("#navExp").click(function() {
+        $("#navExp").click(function() {
         $(".navigation ul li").children().removeClass("nav-active");
         $(".navigation ul li").children().removeClass("activeOnScroll");
         $(this).addClass("nav-active");
-           $(' html,body') .animate({
+        $(' html,body') .animate({
                scrollTop:        $("#experience").offset().top
            }, 1000);
         return false;
        });
 
-      $("#navEdu").click(function() {
+        $("#navEdu").click(function() {
         $(".navigation ul li").children().removeClass("nav-active");
         $(".navigation ul li").children().removeClass("activeOnScroll");
         $(this).addClass("nav-active");
@@ -40,11 +42,11 @@ $("#navAbout").click(function() {
        });
 
 
-       $("#navContact").click(function() {
+         $("#navContact").click(function() {
          $(".navigation ul li").children().removeClass("nav-active");
          $(".navigation ul li").children().removeClass("activeOnScroll");
          $(this).addClass("nav-active");
-            $('html,body ') .animate({
+         $('html,body ') .animate({
                 scrollTop:        $("#contact").offset().top
             }, 1000);
          return false;
@@ -99,15 +101,15 @@ function onScroll(event){
         var refElement = $(currLink.attr("href"));
         var refElementId;
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.nav-link').removeClass("activeOnScroll"); //added to remove active class from all a elements
+          //  $('.nav-link').removeClass("activeOnScroll"); //added to remove active class from all a elements
             $('.nav-link').removeClass("nav-active"); //added to remove active class from all a elements
-            currLink.addClass("activeOnScroll");
+          //  currLink.addClass("activeOnScroll");
         }
         else{
-            currLink.removeClass("activeOnScroll");
+        //    currLink.removeClass("activeOnScroll");
         }
     });
 }
 
 //activeMenu();
-window.addEventListener('scroll', onScroll);
+window.addEventListener('scroll', onScroll); 

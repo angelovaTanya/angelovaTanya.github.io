@@ -33,6 +33,10 @@ header {
     color: #70aed2;
 }
 
+.nav-unactive {
+    color: #eee;
+}
+
 .activeOnScroll {
     color: #70aed2;
 }
