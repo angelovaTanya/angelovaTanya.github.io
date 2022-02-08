@@ -814,6 +814,8 @@ svg{
   padding: 0;
   text-align: center;
   overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)), url(images/contactMe.jpg) no-repeat center center /cover;
+  background-attachment: fixed;
 }
 .contactMe, .inputText {
   margin: 0;
